@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Věra Paukrtová's Personal Page">
+    <title>Věra Paukrtová - CV</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background and typography improvements */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #f7f7f7, #eaeaea); /* Gradient for subtle contrast */
+            color: #333; /* Darker text color for readability */
+            scroll-behavior: smooth;
+            padding: 20px;
+        }
+
+        /* Sticky Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            padding: 20px 0;
+            z-index: 1000;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #87CEEB;
+            color: #fff;
+        }
+
+        /* Header Section with Photo */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif; /* Serif font for headings */
+            font-size: 3em;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        /* Section Layout using Flexbox */
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        section p, ul {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        /* Vizuální oddělení sekcí */
+        section {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section with Icons */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-info p {
+            font-size: 1.3em; /* Zvýraznění kontaktních informací */
+            font-weight: 500;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Removing opacity and animations for immediate visibility */
+        section {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* Responsive Layout for Mobile Devices */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Photo -->
+    <header>
+        <img src="your-photo.jpg" alt="Věra Paukrtová"> <!-- Replace with your actual photo URL or file name -->
+        <h1>Věra Paukrtová</h1>
+        <p>Welcome to my personal website</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I like to find mistakes and fix things. I like to put a system into things.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Beezy</li>
+            <li>Website maintenance and creation</li>
+            <li>User Acceptance Testing</li>
+            <li>Oracle Siebel, Jenkins, LDAP</li>
+            <li>JIRA, Palstat CAQ, Metrosoft CM3.90, MS Office</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Professional Pause</strong> - Liberec (Jan 2024 - Present)<br>Managing health challenges following a diagnosis of multiple sclerosis.</li>
+            <li><strong>Digital HR Support - Webmaster</strong> - Zentiva, Prague (Jan 2022 - Dec 2023)<br>Migrating and creating intranet content using Beezy.</li>
+            <li><strong>UAT Tester Junior</strong> - Cybronet (T-mobile), Prague (May 2021 - Dec 2021)<br>Manual testing of CRM and web applications, bug reporting.</li>
+            <li><strong>Quality Engineer</strong> - Megatech Industries, Jablonec nad Nisou (Jan 2017 - Sep 2020)<br>Handled quality issues and customer complaints, prepared for audits.</li>
+            <li><strong>Assistant & Dealer</strong> - DKL Tech, Jablonec nad Nisou (Jan 2016 - Dec 2016)<br>Managed customer relations and international communication.</li>
+            <li><strong>3D Metrologist</strong> - DKL Tech, Jablonec nad Nisou (Jan 2013 - Dec 2015)<br>Operated 3D coordinate machines and provided quality control.</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Bachelor's Degree</strong> - University College Prague, 2013<br>Field of Study: Destination Management</li>
+            <li><strong>High School Diploma</strong> - Grammar School Jablonec nad Nisou, 2006</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section with Icons -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> +420 722 763 363</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:paukrtovavera@se
